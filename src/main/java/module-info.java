@@ -3,7 +3,7 @@ module inventory {
     requires javafx.fxml;
     requires javafx.controls;
 
-    opens inventory.model to javafx.base;
+//    opens inventory.model to javafx.base;
     exports inventory.model;
     opens inventory to javafx.fxml;
     exports inventory;
@@ -11,4 +11,8 @@ module inventory {
     exports inventory.repository;
     opens inventory.controller to javafx.fxml;
     exports inventory.controller;
+
+    opens inventory.model;
+    opens inventory.service;
+    opens inventory.repository;
 }
