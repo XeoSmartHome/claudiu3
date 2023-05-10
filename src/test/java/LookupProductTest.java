@@ -24,7 +24,7 @@ public class LookupProductTest {
         ));
     }
 
-    @DisplayName("Test lookupProduct() with searchItem null")
+//    @DisplayName("Test lookupProduct() with searchItem null")
     @Test
     public void lookupProductNull() {
         Product product1 = inventory.lookupProduct(null);
@@ -34,7 +34,7 @@ public class LookupProductTest {
         assertNull(product2);
     }
 
-    @DisplayName("Test lookupProduct() with searchItem test")
+//    @DisplayName("Test lookupProduct() with searchItem test")
     @Test
     public void lookupProductTest() {
         Product product = inventory.lookupProduct("test2");
@@ -43,7 +43,7 @@ public class LookupProductTest {
         assertTrue(product.getPrice() > 0);
     }
 
-    @DisplayName("Test lookupProduct() with searchItem notExisting")
+//    @DisplayName("Test lookupProduct() with searchItem notExisting")
     @Test
     public void lookupProductNotExisting() {
         Product product = inventory.lookupProduct("notExisting");
@@ -51,7 +51,7 @@ public class LookupProductTest {
         assertEquals(product.getProductId(), 0);
     }
 
-    @DisplayName("Test lookupProduct() with searchItem testX")
+//    @DisplayName("Test lookupProduct() with searchItem testX")
     @Test
     public void lookupProductTestX() {
         Product product = inventory.lookupProduct("testX");
