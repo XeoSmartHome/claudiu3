@@ -1,3 +1,5 @@
+package white;
+
 import inventory.model.Inventory;
 import inventory.model.Product;
 import inventory.repository.InventoryRepository;

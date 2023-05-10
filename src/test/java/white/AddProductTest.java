@@ -1,3 +1,5 @@
+package white;
+
 import inventory.model.InhousePart;
 import inventory.model.Part;
 import inventory.model.Product;
