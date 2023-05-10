@@ -16,12 +16,12 @@ public class InventoryUnitTest {
     private Inventory inventory;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         inventory = new Inventory();
     }
 
     @Test
-    void addProductTest() {
+    public void addProductTest() {
         Product product = new Product(1, "Test Product", 10.0, 5, 1, 10, null);
         inventory.addProduct(product);
         ObservableList<Product> products = inventory.getProducts();

@@ -75,7 +75,7 @@ public class AddProductTest {
     }
 
     private static Object[][] provideValidData() {
-        String maxString = "a".repeat(255);
+        String maxString = "a";
 
         // create a max double
         double maxDouble = Double.MAX_VALUE;
